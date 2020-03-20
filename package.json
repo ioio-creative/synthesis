@@ -1,0 +1,41 @@
+{
+  "name": "synthesis",
+  "version": "0.1.0",
+  "homepage": "./",
+  "private": true,
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "tone": "^13.8.25"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:bundle": "webpack --config webpack.config.js",
+    "bundle": "npm run build && npm run build:bundle",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ]
+}

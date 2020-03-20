@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <base href="/callisupply" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- test if can load -->
+    <script>
+      window.__PRELOADED_STATE__ = {
+        language: [
+          {
+            code: 'en',
+            display: 'EN',
+            default: true
+          },
+          // {
+          //   code: 'tc',
+          //   display: '中',
+          //   default: false
+          // }
+        ],
+        content: {
+          en: {
+            pages:{
+              index: {
+                landing: {
+                  introduction: [
+                    
+                  {
+                      language: "en",
+                      text: "Hi, my name is SAM C<br/>I am a designer who codes.<br/>Currently in New York."
+                    }, {
+                      language: "zh",
+                      text: "你好，我的名字是陳家浚。<br/>我是一名懂得開發的設計師。<br/>目前身在紐約。",
+                    },
+                  ],
+                  scrollHints: "Scroll Down<br/> to see projects",
+                  cover: {
+                    type: "image",
+                    src: "./media/landingDummy.png"
+                  }
+                },
+                about: {
+                  photo: "./media/sam.png",
+                  pen: "./media/pen.png",
+                  name: "SAM",
+                  introductions: [
+                    {
+                      language: "zh",
+                      text: "你好，我的名字是陳家浚。<br/>我是一名懂得開發的設計師。<br/>目前身在紐約。",
+                    },
+                    {
+                      language: "en",
+                      text: "Hi, my name is SAM C<br/>I am a designer who codes.<br/>Currently in New York."
+                    },
+                  ]
+                },
+                event: {
+                  title: "Feature Event",
+                  month: ["十月", "OCT"],
+                  introductions: [
+                    {
+                      language: "zh",
+                      text: "你好，我的名字是陳家浚。<br/>我是一名懂得開發的設計師。<br/>目前身在紐約。",
+                    },
+                    {
+                      language: "en",
+                      text: "Hi, my name is SAM C<br/>I am a designer who codes.<br/>Currently in New York."
+                    },
+                  ],
+                  event: "<p>With all tools and supplies provided, ou will be engaged in a traditional Chinese calligraphy session with a local professional. I am a national champion in calligraphy, and I am proficient in English, Mandarin, and Cantonese.</p>",
+                  buttonText: "DETAILS"
+                },
+                showcase: [
+                  {
+                    image: "./media/showcase1.png",
+                    title: "Succelents",
+                    content: "Orange is associated with meanings of joy, warmth, heat, sunshine, enthusiasm, creativity, success, encouragement, change, sexuality, freedom and expression",
+                  },
+                  {
+                    image: "./media/showcase2.png",
+                    title: "Succelents",
+                    content: "Orange is associated with meanings of joy, warmth, heat, sunshine, enthusiasm, creativity, success, encouragement, change, sexuality, freedom and expression",
+                  }
+                ],
+                collaboration: {
+                  title: "Collaborations",
+                  icons: [
+                    "./media/collaborations1.png",
+                    "./media/collaborations2.png",
+                    "./media/collaborations3.png",
+                    "./media/collaborations4.png",
+                    "./media/collaborations5.png",
+                    "./media/collaborations6.png",
+                    "./media/collaborations7.png",
+                    "./media/collaborations8.png",
+                    "./media/collaborations9.png",
+                    "./media/collaborations10.png",
+                  ]
+                },
+                banner: {
+                  media: {
+                    type: "image",
+                    src: "./media/banner.png"
+                  },
+                  title: "守正用奇 讓書法融入生活",
+                  brief: "With all tools and supplies provided, you will be engaged in a traditional Chinese calligraphy session with.",
+                  buttonText: "EXPLORE"
+                }
+              },
+              art: {
+                landing: {
+                  introduction: "With over 20 years of writing, Sam builds up a<br/>strong portfolio of using different calligraphy style",
+                  background: {
+                    type: "image",
+                    src: "./media/artBackground.png",
+                  },
+                  filterLabel: "Select the style to explore",
+                  exploreLabel: "Explore Other Style",
+                  buttonLabel: "Explore",
+                  filter: [
+                    {
+                      icon:  "./media/iconFontStyleCNY.jpg",
+                      text: "新年體",
+                      text2: "CNY Script",
+                      type: "CNY",
+                      description: "[Seal] With over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWith over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWith over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWit.",
+                    },
+                    // {
+                    //   icon:  "./media/iconFontStyleSeal.png",
+                    //   text: "篆書",
+                    //   text2: "Seal Script",
+                    //   type: "Seal",
+                    //   description: "[Seal] With over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWith over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWith over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWit.",
+                    // },
+                    // {
+                    //   icon:  "./media/iconFontStyleClerical.png",
+                    //   text: "隸書",
+                    //   text2: "Clerical Script",
+                    //   type: "Clerical",
+                    //   description: "[Clerical] With over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWith over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWith over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWit.",
+                    // },
+                    // {
+                    //   icon:  "./media/iconFontStyleNorthernWei.png",
+                    //   text: "北魏真書",
+                    //   text2: "Northern Wei Script",
+                    //   type: "NorthernWei",
+                    //   description: "[NorthernWei] With over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWith over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWith over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWit.",
+                    // },
+                    // {
+                    //   icon:  "./media/iconFontStyleSemiCursive.png",
+                    //   text: "行書",
+                    //   text2: "Semi-Cursive Script",
+                    //   type: "SemiCursive",
+                    //   description: "[SemiCursive] With over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWith over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWith over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWit.",
+                    // },
+                  ],
+                  projects: [
+                    {
+                      id: "project1",
+                      name: "Project 1 Name Here",
+                      type: "CNY",
+                      thumb: "./media/Art1.jpg",
+                      images: [
+                        "./media/project1.png",
+                        "./media/project2.png",
+                        "./media/project3.png",
+                        "./media/project4.png",
+                      ]
+                    },
+                    {
+                      id: "project2",
+                      name: "Project 2 Name Here",
+                      type: "CNY",
+                      thumb: "./media/Art2.jpg",
+                      images: [
+                        "./media/project1.png",
+                        "./media/project2.png",
+                        "./media/project3.png",
+                        "./media/project4.png",
+                      ]
+                    },
+                    {
+                      id: "project3",
+                      name: "Project 3 Name Here",
+                      type: "CNY",
+                      thumb: "./media/Art3.jpg",
+                      images: [
+                        "./media/project1.png",
+                        "./media/project2.png",
+                        "./media/project3.png",
+                        "./media/project4.png",
+                      ]
+                    },
+                    {
+                      id: "project4",
+                      name: "Project 4 Name Here",
+                      type: "CNY",
+                      thumb: "./media/Art4.jpg",
+                      images: [
+                        "./media/project1.png",
+                        "./media/project2.png",
+                        "./media/project3.png",
+                        "./media/project4.png",
+                      ]
+                    },
+                  ]
+                }
+              },
+              commercial: {
+                landing: {
+                  introduction: [
+                    {
+                      language: "en",
+                      text: "Hi, my name is SAM C<br/>I am a designer who codes.<br/>Currently in New York."
+                    }, {
+                      language: "zh",
+                      text: "你好，我的名字是陳家浚。<br/>我是一名懂得開發的設計師。<br/>目前身在紐約。",
+                    },
+                  ],
+                  scrollHints: "Scroll Down<br/> to see projects",
+                  cover: {
+                    type: "image",
+                    src: "./media/landingCommercial.png"
+                  }
+                },
+                projects: {
+                  filterLabel: "Choose the writing style",
+                  filter: [
+                    {
+                      icon:  "./media/iconFontStyleSeal.png",
+                      text: "篆書",
+                      text2: "Seal Script",
+                      type: "Seal"
+                    },{
+                      icon:  "./media/iconFontStyleClerical.png",
+                      text: "隸書",
+                      text2: "Clerical Script",
+                      type: "Clerical"
+                    },{
+                      icon:  "./media/iconFontStyleNorthernWei.png",
+                      text: "北魏真書",
+                      text2: "Northern Wei Script",
+                      type: "NorthernWei"
+                    },{
+                      icon:  "./media/iconFontStyleSemiCursive.png",
+                      text: "行書",
+                      text2: "Semi-Cursive Script",
+                      type: "SemiCursive"
+                    },
+                  ],
+                  items: [
+                    {
+                      id: "project1",
+                      name: "Project 1 Name Here",
+                      type: "NorthernWei",
+                      thumb: "./media/project1.png"
+                    },
+                    {
+                      id: "project2",
+                      name: "Project 2 Name Here",
+                      type: "Clerical",
+                      thumb: "./media/project2.png"
+                    },
+                    {
+                      id: "project3",
+                      name: "Project 3 Name Here",
+                      type: "SemiCursive",
+                      thumb: "./media/project3.png"
+                    },
+                    {
+                      id: "project4",
+                      name: "Project 4 Name Here",
+                      type: "Seal",
+                      thumb: "./media/project4.png"
+                    },
+                  ]
+                },
+                banner: {
+                  media: {
+                    type: "image",
+                    src: "./media/banner2.png"
+                  },
+                  title: "守正用奇 讓書法融入生活",
+                  brief: "With all tools and supplies provided, you will be engaged in a traditional Chinese calligraphy session with.",
+                  buttonText: "CONTACT"
+                }
+              },
+              about: {
+                landing: {
+                  name: "SAM",
+                  brief: "With over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy style",
+                  image: "./media/aboutPhoto.png",
+                  label: "Book age",
+                  year: 20,
+                  unit: "yrs",
+                  scrollHints: "Scroll Down<br/> to see projects",
+                },
+                main: {
+                  title: "關<br>於",
+                  title2: "About",
+                  content: "With over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWith over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWith over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWit.With over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWith over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWith over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWit.",
+                  image: "./media/aboutMain.png",
+                  points: [
+                    {
+                      "image": "./media/brush1.png",
+                      "brief": "With over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWith."
+                    },
+                    {
+                      "image": "./media/brush2.png",
+                      "brief": "With over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWith."
+                    },
+                    {
+                      "image": "./media/brush3.png",
+                      "brief": "With over 20 years of writing, Sam builds up a strong portfolio of using different calligraphy styleWith."
+                    }
+                  ]
+                }
+              }
+            },
+            menu: {
+              items: [
+                {
+                  "label": "About Me",
+                  "to": "about",
+                },
+                {
+                  "label": "Art Showcase",
+                  "to": "art",
+                },
+                // {
+                //   "label": "Experience",
+                //   "to": "experience",
+                // },
+                // {
+                //   "label": "Products",
+                //   "to": "products",
+                // },
+                // {
+                //   "label": "Partnerships",
+                //   "to": "partnerships",
+                // },
+                // {
+                //   "label": "Contact",
+                //   "to": "contact",
+                // },
+              ]
+            },
+            footer: {
+
+            },
+            contact: {
+              'label': 'Contact Us',
+              'email': 'Hellohello@Helloemail.com',
+              'phone': '+852 9222 2255',
+              'privacy': 'Privacy Policy',
+              'legal': 'legal Terms',
+            },
+            privacy: "",
+            socialLink: [
+            {
+                type: "airbnb",
+                url: "https://www.airbnb.com"
+              },
+              {
+                type: "instagram",
+                url: "https://www.instagram.com"
+              },
+              {
+                type: "youtube",
+                url: "https://www.youtube.com"
+              }
+            ]
+          }
+        },
+        logo: "./media/logo.png",
+      };
+    </script>
+    <div id="main"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

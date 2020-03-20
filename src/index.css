@@ -1,0 +1,44 @@
+/* @font-face {
+  font-family: "MSungHK"; 
+  src: url("./media/MSungHK_Xbold.eot"); 
+  src: url("./media/MSungHK_Xbold.eot?#iefix") format("embedded-opentype"), 
+  url("./media/MSungHK_Xbold.woff2") format("woff2"), 
+  url("./media/MSungHK_Xbold.woff") format("woff"), 
+  url("./media/MSungHK_Xbold.ttf") format("truetype"), 
+  url("./media/MSungHK_Xbold.svg#MSungHK") format("svg");
+} */
+* {
+  box-sizing: border-box;
+  vertical-align: top;
+  font-family: "Times New Roman", Times, "MSungHK", serif;
+}
+html {
+  font-size: 20px;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+html, body, #main {
+  height: 100%;
+}
+.verticalText {
+  writing-mode: vertical-rl;
+}
+
+button {
+  appearance: none;
+  background-color: rgb(188,165,134);
+  color: #000;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
